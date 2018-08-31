@@ -5,6 +5,7 @@ $sidebar-width: 250px;
 $container-width: 850px;
 $whitespace: calc(100% - #{$container-width + $sidebar-width});
 $margin-left: calc(#{$whitespace}/2);
+$small-screen-header-height: 75px;
 * {
 	//border: 1px solid green;
 	box-sizing: border-box;
@@ -119,12 +120,14 @@ i {
 }
 
 .small-screen{
-	position: relative;
+	position: fixed;
+	top:0;
 	background-color: black;
 	color: white;
 	display: none;
+	z-index: 10;
 	width: 100%;	
-	height: 100px;
+	height: $small-screen-header-height;
 	.hamburger{
 		display: inline-block;
 		position: absolute;
@@ -213,7 +216,7 @@ header{
 		position: absolute;
 		top: 50px;
 		left: 20px;
-		z-index: 10;
+		z-index: 5;
 		color: white;
 		font-size: 40px;
 	}
@@ -341,6 +344,10 @@ footer{
 		background-color: white;
 		height: 100%;
 		overflow: scroll
+	}
+
+	header{
+		margin-top: $small-screen-header-height;
 	}
 
 	.container{
