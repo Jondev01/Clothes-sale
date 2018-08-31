@@ -6,23 +6,44 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-		<!-- sidebar -->
-		<nav>
-			<ul>
-				<a href="#"><li>Shirts</li></a>
-				<a href="#"><li>Dresses</li></a>
-				<a href="#"><li>Jeans</li></a>
-				<a href="#"><li>Jackets</li></a>
-				<a href="#"><li>Gymwear</li></a>
-				<a href="#"><li>Blazers</li></a>
-				<a href="#"><li>Shoes</li></a>
-			</ul>
-		</nav>
+	<!-- sidebar -->
+	<nav>
+		<div>
+			<span class="logo">Logo</span>
+		</div>
+		<ul>
+			<a href="#"><li>Shirts</li></a>
+			<a href="#" onclick="showDrop()">
+				<li class="current-type">
+				Dresses <i class="arrow down"></i>
+				</li>
+				<div class="drop-down">
+					<a href="#">Short</a>
+					<a href="#">Long</a>
+					<a href="#">Cocktail</a>
+					<a href="#" class="current"><i class="right"></i> Misc</a>
+				</div>
+		</a>
+			<a href="#"><li>Jeans</li></a>
+			<a href="#"><li>Jackets</li></a>
+			<a href="#"><li>Gymwear</li></a>
+			<a href="#"><li>Blazers</li></a>
+			<a href="#"><li>Shoes</li></a>
+		</ul>
+	</nav>
+	<div class="small-screen">
+		<span class="logo">Logo</span>
+		<span class="hamburger">
+			<div></div>
+			<div></div>
+			<div></div>
+		</span>
+	</div>
 	<div class="container">
 		<header>
 			<span>Dresses</span>
-			<img src="cart.jpg"/>
-			<img src="search.jpg"/>
+			<img src="cart.png"/>
+			<img src="search.png"/>
 		</header>
 		<div class="large-image">
 				<img src="main_dress.jpg">
@@ -82,6 +103,7 @@
 			<form>
 				<input type="text" placeholder="Enter e-mail"/>
 				<button>Subscribe</button>
+			</form>
 		</section>
 
 		<section id="info">
@@ -129,7 +151,7 @@
 		<footer>
 			Inspired by w3.css
 		</footer>
-
 	</div>
+	<script src="main.js"></script>
 </body>
 </html>
