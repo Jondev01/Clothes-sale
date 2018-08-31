@@ -255,7 +255,7 @@ header img {
   padding-bottom: 30px;
 }
 #info h5 {
-  font-size: 1.2rem;
+  font-size: 1.2em;
   margin: 0;
   padding: 10px;
   font-weight: lighter;
@@ -284,7 +284,7 @@ header img {
 }
 #info .about {
   text-align: center;
-  font-size: 0.8em;
+  font-size: 0.8rem;
 }
 #info .about a {
   color: inherit;
@@ -294,6 +294,14 @@ header img {
 #info .store ul {
   list-style-type: none;
   padding-left: 0;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
 }
 
 @media screen and (max-width: 1130px) {
@@ -335,6 +343,10 @@ header img {
 
   img {
     width: 100%;
+  }
+
+  #info {
+    font-size: 0.8em;
   }
 }
 
